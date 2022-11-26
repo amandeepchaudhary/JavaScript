@@ -390,3 +390,34 @@ summ = (a, b) => {
     return a+b;
 }
 
+// making a function using arrow method
+logKro = () =>{
+    document.getElementsByClassName('container')[1].innerHTML = '<b>Set Timeout Fired!!</b>'
+    console.log("I am your Log")
+}
+
+clrt = setTimeout(logKro, 2000);  // setTimeout(function, milliseconds mai time hoga ki itne time baad yh function execute ho)  yh 2 second baad show hoga
+
+clr = setInterval(logKro, 2000);  // setInterval is used to show a function repeatitively(Baar baar) within a certain time frame
+
+// Use clearTimeout(clrt)/clearInterval(clr) to cancel setTimeout/setInterval
+clearInterval(clr);  // Used to stop the setinterval, as setinterval gives the id to a variable and if we pass that id in the clearinterval it will clear the setinterval's execution
+
+clearTimeout(clrt);  // Used to stop the settimeout, as settimeout gives the id to a variable and if we pass that id in the cleartimeout it will clear the settimeout's execution
+
+
+
+// FaceBook
+// isse hum like krwane k liye use kr skte h getElementsByTagName mai button ya kuch bhi se liya let k ander phir usko setinterval mai ek click naam se fucntion dal diya aur voh like krta rahega jaise jaise setinterval chalega click hota rahega like button pe
+
+// lik = () =>{
+    
+//     let like = firstcontainer.addEventListener('scroll', function(){
+//         document.querySelectorAll('.x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x1ey2m1c xds687c xg01cxk x47corl x10l6tqk x17qophe x13vifvy x1ebt8du x19991ni x1dhq9h') = click();
+//     })
+// };
+// setInterval(lik, 2000);
+
+
+
+//JavaScript localStorage
