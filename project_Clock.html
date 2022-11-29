@@ -11,10 +11,26 @@
         let a;
         let date;
         let time;
+        let hours;
+        let mins;
+        let secs;
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         setInterval(() => {
             a = new Date();
-            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            hours = a.getHours()
+            mins = a.getMinutes()
+            secs = a.getSeconds()
+            
+            if (hours<10){
+                hours = '0'+hours;
+            }
+            else if(mins<10){
+                mins = '0'+mins;
+            }
+            else if(secs<10){
+                secs = '0'+secs;
+            }
+            time = hours + ':' + mins + ':' + secs;
             date = a.toLocaleString(undefined, options);
             document.getElementById('time').innerHTML = time + '  <br><b>on</b> ' + date;
         }, 1000);
