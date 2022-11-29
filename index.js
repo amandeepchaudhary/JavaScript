@@ -426,6 +426,32 @@ localStorage.setItem('name', 'aman')  //In this 'name' is key, whereas 'aman' is
 localStorage  //is used to see what the local storage have in it within the website
 localStorage.clear()  //is used to clear the localStorage of a webpage in inspect console
 localStorage.getItem('name')  //is used to get the value by giving the key
+localStorage.removeItem('name')  //to remove a single item
 
 //Don't give any important information in localStorage as We can access it easily by going in inspect-->application-->storage-->localStorage
 
+
+//JSON
+//Useful in Data Tranportation
+// open standard file format, which is used to exchange the data
+//JSON doesn't accept single quotes not even once<<<----
+//Changing an obj to a string
+obj = {name: "aman", length: 1, a:{this: "that"}};
+jso = JSON.stringify(obj);
+console.log(jso); 
+
+// to know a type of the variable we use 'typeof'
+
+//Changing a string to a obj
+parsed = JSON.parse(`{"name":"aman","length":1,"a":{"this":"that"}}`)  //we give parse a string inside the backticks
+console.log(parsed);
+
+
+// ECMA Script 
+// is used to set a standard for javaScript as everyone doing their thing when the javaScript launched so ECMA Scripts made to set standards for the browsers
+
+
+//Template literals - Backticks
+m = 23;
+console.log(`this is a string ${m}`);
+console.log("this is my" , m, "ok");
