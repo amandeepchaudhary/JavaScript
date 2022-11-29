@@ -421,3 +421,11 @@ clearTimeout(clrt);  // Used to stop the settimeout, as settimeout gives the id 
 
 
 //JavaScript localStorage
+// is used to store some items with key:value pair, keep them less as much as possible
+localStorage.setItem('name', 'aman')  //In this 'name' is key, whereas 'aman' is the value 
+localStorage  //is used to see what the local storage have in it within the website
+localStorage.clear()  //is used to clear the localStorage of a webpage in inspect console
+localStorage.getItem('name')  //is used to get the value by giving the key
+
+//Don't give any important information in localStorage as We can access it easily by going in inspect-->application-->storage-->localStorage
+
